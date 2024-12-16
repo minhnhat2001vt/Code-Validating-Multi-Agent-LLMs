@@ -91,7 +91,7 @@ The generated code is saved in the `coding` folder for future use.
 ## Demo Video
 
 <video width="100%" controls>
-  <source src="demo/Demo.mp4" type="video/mp4">
+  <source src="multi_agent_llms/demo/Demo.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 

@@ -15,6 +15,7 @@ The agents communicate through a dialogue system, exchanging information to coll
 - **Code Validation**: Automatically tests the generated code to ensure correctness and functionality.
 - **Interactive Interface**: Provides a user-friendly interface built with [Gradio](https://gradio.app/) for real-time interaction with the agents.
 - **Secure Execution**: Implements safeguards (e.g., optional Docker support) for secure code execution.
+- **Local Storage**: Saves the generated and validated code inside a local folder named `coding` for future reference.
 
 ## Project Pipeline
 1. **User Request**: The user submits a request to generate code for a specific task.
@@ -22,6 +23,7 @@ The agents communicate through a dialogue system, exchanging information to coll
    - **AssistantAgent** generates the code.
    - **UserProxyAgent** executes the code and validates its correctness.
 3. **Output Delivery**: The system provides the generated code, execution results, and conversation history.
+4. **Code Storage**: The generated and validated code is saved in the `coding` folder on the local system.
 
 ## File Structure
 ```
@@ -32,6 +34,7 @@ multiagent_llms/
 ├── utils.py           # Utility functions for threading and other operations
 ├── OAI_CONFIG_LIST.json  # Configuration file for LLM API keys
 ├── requirements.txt   # Lists the required dependencies
+├── coding/            # Folder to store generated and validated code
 ```
 
 ## Installation
@@ -83,6 +86,7 @@ Execution Result:
 Input: 5
 Output: 120
 ```
+The generated code is saved in the `coding` folder for future use.
 
 ## Contributing
 Contributions are welcome! Feel free to open an issue or submit a pull request to improve the project.
